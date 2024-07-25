@@ -1,0 +1,13 @@
+name: Test workflow
+on: push
+jobs:
+    create-file-job:
+       runs-on: ubuntu-latest
+       steps:
+            - name:cloning steps:
+              uses: actions/checkout@v4
+
+              -name: create a directory and create-file-job
+               run:
+                mkdir -p ./play-dir/custom-file
+                ls .
